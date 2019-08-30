@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/aa14c4bf9a.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.js"></script>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="container pt-3 pb-3">
+            <div class="brand anim">
+                <a href="index.html"><img src="./assets/jobrLogo.svg" alt=""></a>
+            </div>
+            <ul class="anim">
+                <li>Home</li>
+                <li>about us</li>
+                <li><button>Login</button></li>
+                <li>Join us</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="overlay">
+            <div class="container">
+                <h1 class="align-center anim">Explore Exciting Career Opportunities!</h1>
+                <form action="" method="get">
+                    <div class="formgroup pb-3 pt-3 anim">
+                        <input type="text" placeholder="Job title, Company name...">
+                        <input type="text" placeholder="Industry">
+                        <input type="text" placeholder="Location">
+                        <button>Search <i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="jumbotron mt-5">
+                <div class="container">
+                <h1>Top Jobs for you</h1>
+                <div class="job-posts mt-3">
+                        <div class="grid mr-5">
+                            <h4>Content Creator</h4>
+                            <h6>Allure Essentials, Lagos</h6>
+                            <hr>
+                            <p>Creative thinker, experienced in content writing...</p>
+                            <button>More</button>
+                        </div>
+                        <div class="grid">
+                            <h4>Digital marketer</h4>
+                            <h6>Colossum Business Group, Abuja</h6>
+                            <hr>
+                            <p>Able to run successful Facebook and IG Ad campaigns...</p>
+                            <button>More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top-footer anim">
+            <div class="container">
+                <form action="">
+                    <h3>Subscribe to our Newsletters</h3>
+                    <div class="form-group d-flex">
+                        <input type="email" placeholder="Your email...">
+                        <button>Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom-footer anim">
+            <div class="container">
+                <p>Copyright &copy; 2019 Jobr</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+		window.sr = ScrollReveal();
+		sr.reveal('.anim');
+	</script>
+</body>
+</html>

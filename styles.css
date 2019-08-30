@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    background: #1C2331;
+    display: flex;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav .brand {
+    float: left;
+}
+
+nav ul {
+    float: right;
+    display: flex;
+    color: #fff;
+    list-style: none;
+    vertical-align: 0;
+}
+
+nav ul li {
+    padding-left: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+nav ul button {
+    background: #13ABFF;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav ul button:hover {
+    background: #095A80;
+}
+
+.wrapper {
+    background: url(./assets/showcase.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.wrapper .overlay{
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper h1 {
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+    color: #fff;
+}
+
+.wrapper .formgroup {
+    background: rgba(255, 255, 255, .3);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 6px;
+}
+
+.wrapper form input {
+    outline: none;
+    height: 50px;
+    border-radius: 6px;
+    background: #e4e3e3;
+    border: none;
+    color: #898989;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 200px;
+    transition: .4s;
+    font-size: 14px;
+}
+
+.wrapper form input:focus {
+    border-left: 4px solid #13ABFF;
+    background: #eeeded;
+}
+
+.wrapper .formgroup button {
+    background: #13ABFF;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: auto 15px;
+    font-size: 14px;
+    min-width: 140px;
+    transition: .3s;
+}
+
+.wrapper .formgroup button:hover {
+    background: #095A80;
+}
+
+.wrapper .formgroup button:active {
+    transform: scale(.9);
+}
+
+.main h1 {
+    font-weight: 700;
+    color: #4f565c;
+}
+
+.main .job-posts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+}
+
+.main .grid {
+    box-shadow: 2px 3px 4px #cacaca;
+    background: #fff;
+    width: 47%;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.main .grid button {
+    background: none;
+    border: 2px solid #13ABFF;
+    color: #13ABFF;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 8px 15px;
+}
+
+.main .grid h6 {
+    color: #095A80;
+}
+
+.top-footer {
+    background: #095A80;
+    color: #fff;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.top-footer h3 {
+    margin: 20px auto;
+}
+
+.top-footer input{
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #e4e3e3;
+    border: none;
+    color: #898989;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 45px;
+    font-size: 14px;
+}
+.top-footer button {
+    background: #1C2331;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 45px;
+    padding: auto 15px;
+    font-size: 14px;
+    min-width: 150px;
+    transition: .3s;
+}
+
+.top-footer button:hover {
+    background: #13ABFF;
+}
+
+.bottom-footer {
+    background: #1C2331;
+    color: #fff;
+    overflow: hidden;
+}
+
+.bottom-footer p {
+    margin: 20px auto;
+}
+
+
+/* Mobile Version */
+@media screen and (max-width: 980px) {
+
+    nav {
+        display: block;
+        height: 15vh;
+    }
+
+    nav .brand {
+        float: left;
+    }
+
+    nav ul{
+        display: inline flex;
+    }
+
+    nav ul li {
+        padding-left: 0;
+        padding-right: 15px
+    }
+
+    wrapper .formgroup {
+        display: block;
+        overflow: hidden;
+
+    }
+
+    .wrapper form input {
+        display: block;
+        width: 80%;
+    }
+
+    .main .job-posts {
+        display: block;
+    }
+
+    .main .grid {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
